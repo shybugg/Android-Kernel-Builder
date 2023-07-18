@@ -14,6 +14,11 @@
         "branch": "android11-release",
         "name": "clang",
         "binPath": ["./bin"]
+      },
+      {
+        "url" "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android11-release.tar.gz",
+        "name": "gcc",
+        "binPath": "bin"
       }
     ],
     "ccache": true,
