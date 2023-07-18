@@ -24,13 +24,14 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "clang",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm"
+        "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androideabi-",
+        "LD": "clang/bin/ld.lld",
+        "NM": "clang/bin/llvm-nm",
+        "OBJCOPY": "clang/bin/llvm-objcopy",
       }
     },
     "AnyKernel3": {
