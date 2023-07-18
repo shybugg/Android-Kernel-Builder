@@ -15,7 +15,12 @@
         "binPath": ["./bin"]
       },
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android11-release.tar.gz",
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 aarch64-linux-android-4.9",
+        "name": "gcc",
+        "binPath": ["bin"]
+      }
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 arm-linux-androideabi-4.9",
         "name": "gcc",
         "binPath": ["bin"]
       }
@@ -29,16 +34,8 @@
         "CROSS_COMPILE": "gcc/bin/aarch64-linux-androidkernel-",
         "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androidkernel-",
         "LD": "clang/bin/ld.lld",
-        "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
         "OBJCOPY": "clang/bin/llvm-objcopy",
-        "OBJDUMP": "clang/bin/llvm-objdump",
-        "READELF": "clang/bin/llvm-readelf",
-        "OBJSIZE": "clang/bin/llvm-size",
-        "STRIP": "clang/bin/llvm-strip",
-        "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "clang/bin/llvm-ar",
-        "LLVM_DIS": "clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
