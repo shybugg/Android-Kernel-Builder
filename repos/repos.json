@@ -10,9 +10,9 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android11-release/clang-r383902b.tar.gz",
+        "branch": "android11-release",
+        "name": "clang",
         "binPath": ["./bin"]
       }
     ],
