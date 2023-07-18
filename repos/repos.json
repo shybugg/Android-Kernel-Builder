@@ -1,1 +1,36 @@
-[]
+{
+  "kernelSource": {
+    "name": "Pissarro-KernelSU",
+    "repo": "https://github.com/sonrixmomo/Xiaomi_Kernel_OpenSource",
+    "branch": "pissarro-r-oss",
+    "device": "pissarro",
+    "defconfig": "pissarro_user_defconfig"
+  },
+  "withKernelSU": true,
+  "toolchains": [
+    {
+      "repo": "https://github.com/kdrag0n/proton-clang",
+      "branch": "master",
+      "name": "proton-clang",
+      "binPath": [bin]
+    }
+  ],
+  "ccache": true,
+  "params": {
+    "ARCH": "arm64",
+    "CC": "proton-clang/bin/clang",
+    "externalCommand": {
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+    }
+  },
+  "AnyKernel3": {
+    "use": true,
+    "release": false,
+    "repo": "https://github.com/SakuraNotStupid/AnyKernel3",
+    "branch": "master"
+  }
+}
