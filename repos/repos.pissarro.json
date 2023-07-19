@@ -13,7 +13,7 @@
         "repo": "https://gitlab.com/LeCmnGend/proton-clang",
         "branch": "clang-13",
         "name": "clang",
-        "binPath": ["./bin"]
+        "binPath": ["bin"]
       }
     ],
     "ccache": true,
