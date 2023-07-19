@@ -7,7 +7,7 @@
       "device": "pissarro",
       "defconfig": "pissarro_user_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/LeCmnGend/proton-clang",
@@ -21,12 +21,12 @@
       "ARCH": "arm64",
       "CC": "clang/bin/clang",
       "externalCommand": {
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "CLANG_TRIPLE": "clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
         "LD": "clang/bin/ld.lld",
-        "AS": "clang/bin/llvm-as",
         "AR": "clang/bin/llvm-ar",
+        "AS": "clang/bin/llvm-as",
         "NM": "clang/bin/llvm-nm",
         "OBJCOPY": "clang/bin/llvm-objcopy",
         "OBJDUMP": "clang/bin/llvm-objdump",
