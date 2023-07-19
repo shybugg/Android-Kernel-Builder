@@ -1,42 +1,45 @@
 [
-  {
-    "kernelSource": {
-      "name": "Pissarro-KernelSU",
-      "repo": "https://github.com/sonrixmomo/kernel_xiaomi_pissarro",
-      "branch": "dragon",
-      "device": "pissarro",
-      "defconfig": "pissarro_user_defconfig"
-    },
-    "withKernelSU": true,
-    "toolchains": [
-      {
-        "repo": "https://gitlab.com/LeCmnGend/proton-clang",
-        "branch": "clang-13",
-        "name": "clang",
-        "binPath": ["bing"]
-      }
-    ],
-  "ccache": true,
-  "params": {
-    "ARCH": "arm64",
-    "CC": "clang",
-    "externalCommand": {
-          "CLANG_TRIPLE": "aarch64-linux-gnu-",
-          "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
-          "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
-          "LD": "clang/bin/ld.lld",
-          "AS": "clang/bin/llvm-as",
-          "AR": "clang/bin/llvm-nm",
-          "NM": "clang/bin/llvm-nm",
-          "STRIP": "clang/bin/llvm-strip",
-          "OBJCOPY": "clang/bin/llvm-objcopy",
-          "OBJDUMP": "clang/bin/llvm-objdump",
+    {
+        "kernelSource": {
+            "name": "Pissarro-KernelSU",
+            "repo": "https://github.com/sonrixmomo/kernel_xiaomi_pissarro",
+            "branch": "dragon",
+            "device": "pissarro",
+            "defconfig": "pissarro_user_defconfig"
+        },
+        "withKernelSU": true,
+        "toolchains": [
+            {
+                "repo": "https://gitlab.com/LeCmnGend/proton-clang",
+                "branch": "clang-13",
+                "name": "clang",
+                "binPath": [
+                    "bing"
+                ]
+            }
+        ],
+        "ccache": true,
+        "params": {
+            "ARCH": "arm64",
+            "CC": "clang",
+            "externalCommand": {
+                "CLANG_TRIPLE": "aarch64-linux-gnu-",
+                "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
+                "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
+                "LD": "clang/bin/ld.lld",
+                "AS": "clang/bin/llvm-as",
+                "AR": "clang/bin/llvm-nm",
+                "NM": "clang/bin/llvm-nm",
+                "STRIP": "clang/bin/llvm-strip",
+                "OBJCOPY": "clang/bin/llvm-objcopy",
+                "OBJDUMP": "clang/bin/llvm-objdump"
+            }
+        },
+        "AnyKernel3": {
+            "use": true,
+            "release": false,
+            "repo": "https://github.com/SakuraNotStupid/AnyKernel3/",
+            "branch": "master"
+        }
     }
-  },
-  "AnyKernel3": {
-    "use": true,
-    "release": false,
-    "repo": "https://github.com/SakuraNotStupid/AnyKernel3/",
-    "branch": "master"
-  }
-}
+]
