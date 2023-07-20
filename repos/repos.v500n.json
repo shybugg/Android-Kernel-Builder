@@ -5,7 +5,7 @@
         "repo": "https://github.com/sonrixmomo/android_kernel_lge_sm8150",
         "branch": "main",
         "device": "V500N",
-        "defconfig": "vendor/dragon_flash"
+        "defconfig": "vendor/dragon_flash_defconfig"
       },
       "withKernelSU": true,
       "toolchains": [
