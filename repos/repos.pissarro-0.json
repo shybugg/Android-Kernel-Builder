@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Pissarro-0",
       "repo": "https://github.com/sonrixmomo/Xiaomi_Kernel_OpenSource",
-      "branch": "liquid-11.0",
+      "branch": "pissarro-r-oss",
       "device": "pissarro",
       "defconfig": "pissarro_user_defconfig"
     },
