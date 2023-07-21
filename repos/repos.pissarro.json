@@ -20,7 +20,8 @@
     "binPath": ["bin"]
   },
   {
-    "url": "https://github.com/kdrag0n/proton-clang",
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
     "name": "clang",
     "binPath": ["bin"]
   }
