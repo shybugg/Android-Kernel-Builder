@@ -11,7 +11,7 @@
     "toolchains": [
   {
     "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/",
-    "branch": "android-10.0.0_r32",
+    "branch": "gcc",
     "name": "gcc",
     "binPath": ["bin"]
   },
@@ -31,9 +31,9 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "gcc64/aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "gcc/arm-linux-androideabi-",
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "LD": "ld.lld",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
@@ -49,7 +49,7 @@
     },
     "AnyKernel3": {
       "use": true,
-      "release": true,
+      "release": false,
       "repo": "https://github.com/sonrixmomo/AnyKernel3",
       "branch": "master"
     }
