@@ -290,7 +290,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: ${{ env.useAnykernel == 'true' }}
         with:
-          name: "${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}"
+          name: "AnyKernel3-${{ env.KERNEL_DEVICE }}_${{ env.builddate }}"
           path: AnyKernel3/*
 
       - name: 🧧 Create GitHub Release => (${{ env.builddate }})
