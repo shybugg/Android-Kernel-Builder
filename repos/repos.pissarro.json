@@ -20,7 +20,7 @@
     "binPath": ["bin"]
   },
   {
-    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android11-release/clang-r383902b.tar.gz",
+    "url": "https://github.com/kdrag0n/proton-clang",
     "name": "clang",
     "binPath": ["bin"]
   }
