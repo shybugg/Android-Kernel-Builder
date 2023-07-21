@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Pissarro-KernelSU",
-      "repo": "https://github.com/sonrixmomo/Xiaomi_Kernel_OpenSource",
-      "branch": "pissarro-r-oss",
+      "repo": "https://github.com/fjrXTR/android_kernel_xiaomi_pissarro",
+      "branch": "liquid-11.0",
       "device": "pissarro",
       "defconfig": "pissarro_user_defconfig"
     },
@@ -44,7 +44,8 @@
         "STRIP": "clang/bin/llvm-strip",
         "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
         "LLVM_AR": "clang/bin/llvm-ar",
-        "LLVM_DIS": "clang/bin/llvm-dis"
+        "LLVM_DIS": "clang/bin/llvm-dis",
+        "CONFIG_SECTION_MISMATCH_WARN_ONLY": "y"
       }
     },
     "AnyKernel3": {
