@@ -3,17 +3,29 @@
     "kernelSource": {
       "name": "Pissarro-ksu",
       "repo": "https://github.com/sonrixmomo/kernel_xiaomi_pissarro",
-      "branch": "dragon",
+      "branch": "liquid-11.0",
       "device": "pissarro",
       "defconfig": "pissarro_user_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/LeCmnGend/proton-clang",
-        "branch": "clang-13",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
         "name": "clang",
         "binPath": ["bin"]
+      },
+      {
+        "repo": "https://github.com/sarthakroy2002/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7",
+        "branch": "master",
+        "name": "gcc64",
+        "binPath": ["bin"]
+      },
+      {
+        "repo": "https://github.com/sarthakroy2002/linaro_arm-linux-gnueabihf-7.5",
+        "branch": "master",
+        "name": "gcc",
+        "binPath": ["bin"] 
       }
     ],
     "ccache": true,
@@ -22,8 +34,8 @@
       "CC": "clang/bin/clang",
       "externalCommand": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "/clang/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "/clang/bin/arm-linux-androideabi-",
+        "CROSS_COMPILE": "/gcc64/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "/gcc/bin/arm-linux-androideabi-",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
