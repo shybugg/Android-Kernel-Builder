@@ -10,7 +10,8 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "url": "https://gitlab.com/projectelixiros/android_prebuilts_clang_host_linux-x86_clang-r468909b/-/archive/Master/android_prebuilts_clang_host_linux-x86_clang-r468909b-Master.tar.gz",
+        "repo": "https://gitlab.com/projectelixiros/android_prebuilts_clang_host_linux-x86_clang-r468909b",
+        "branch":"Master"
         "name": "clang",
         "binPath": ["bin"]
       },
