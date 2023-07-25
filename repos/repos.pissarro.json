@@ -10,8 +10,8 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/projectelixiros/android_prebuilts_clang_host_linux-x86_clang-r468909b",
-        "branch":"Master",
+        "repo": "https://gitlab.com/LeCmnGend/proton-clang",
+        "branch":"clang-13",
         "name": "clang",
         "binPath": ["bin"]
       },
