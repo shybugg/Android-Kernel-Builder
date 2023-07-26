@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Pissarro-0",
+      "name": "Pissarro-ksu",
       "repo": "https://github.com/sonrixmomo/Xiaomi_Kernel_OpenSource",
       "branch": "pissarro-r-oss",
       "device": "pissarro",
@@ -10,22 +10,22 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/sarthakroy2002/linaro_arm-linux-gnueabihf-7.5",
-        "branch": "master",
-        "name": "gcc",
+        "repo": "https://gitlab.com/LeCmnGend/proton-clang",
+        "branch":"clang-13",
+        "name": "clang",
         "binPath": ["bin"]
       },
       {
-        "repo": "https://github.com/sarthakroy2002/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7",
-        "branch": "master",
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+        "branch": "lineage-19.1",
         "name": "gcc64",
         "binPath": ["bin"]
       },
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "clang",
-        "binPath": ["bin"]
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+        "branch": "lineage-19.1",
+        "name": "gcc",
+        "binPath": ["bin"] 
       }
     ],
     "ccache": true,
@@ -34,8 +34,8 @@
       "CC": "clang/bin/clang",
       "externalCommand": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "gcc64/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androideabi-",
+        "CROSS_COMPILE": "/gcc64/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "/gcc/bin/arm-linux-androideabi-",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
@@ -53,8 +53,8 @@
     "AnyKernel3": {
       "use": true,
       "release": false,
-      "repo": "https://github.com/sonrixmomo/AnyKernel3",
-      "branch": "master"
+      "repo": "https://github.com/AbzRaider/AnyKernel33",
+      "branch": "pissarro"
     }
   }
 ]
