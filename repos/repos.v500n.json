@@ -33,8 +33,8 @@
         "CC": "clang/bin/clang",
         "externalCommand": {
           "CLANG_TRIPLE": "aarch64-linux-gnu-",
-          "CROSS_COMPILE": "gcc64/aarch64-linux-android-",
-          "CROSS_COMPILE_ARM32": "gcc/arm-linux-androideabi-",
+          "CROSS_COMPILE": "gcc64/bin/aarch64-linux-android-",
+          "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androideabi-",
           "LD": "clang/bin/ld.lld",
           "AR": "clang/bin/llvm-ar",
           "NM": "clang/bin/llvm-nm",
