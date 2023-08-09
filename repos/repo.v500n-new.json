@@ -4,7 +4,7 @@
         "name": "Flashlm-V500N-New-KernelSU",
         "repo": "https://github.com/sonrixmomo/android_kernel_lge_sm8150",
         "branch": "main",
-        "device": "V500N",
+        "device": "V500N-new",
         "defconfig": "vendor/flash_lao_com-perf_defconfig"
       },
       "withKernelSU": true,
