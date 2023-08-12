@@ -2,8 +2,8 @@
     {
       "kernelSource": {
         "name": "LG-V300L-KernelSU",
-        "repo": "https://github.com/sonrixmomo/android_kernel_lge_msm8998",
-        "branch": "lge_opensource",
+        "repo": "https://github.com/sonrixmomo/lge_msm8998_h930ds",
+        "branch": "master",
         "device": "V300L",
         "defconfig": "joan_lgu_kr-perf_defconfig"
       },
