@@ -2,10 +2,10 @@
     {
       "kernelSource": {
         "name": "Dragon-V500N-KernelSU",
-        "repo": "https://github.com/sonrixmomo/android_kernel_lge_sm8150",
+        "repo": "https://github.com/shybugg/android_kernel_lge_sm8150",
         "branch": "main",
         "device": "V500N",
-        "defconfig": "vendor/dragon_flash_defconfig"
+        "defconfig": "vendor/BieFan_flash_defconfig"
       },
       "withKernelSU": true,
       "toolchains": [
