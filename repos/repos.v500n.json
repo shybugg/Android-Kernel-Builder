@@ -1,7 +1,7 @@
 [
     {
       "kernelSource": {
-        "name": "Dragon-V500N-KernelSU",
+        "name": "BieFan-V500N-KernelSU",
         "repo": "https://github.com/shybugg/android_kernel_lge_sm8150",
         "branch": "main",
         "device": "V500N",
